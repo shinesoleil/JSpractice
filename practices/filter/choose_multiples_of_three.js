@@ -1,8 +1,13 @@
 'use strict';
 
-function choose_multiples_of_three(collection) {
+function isMultipleOfThree(value) {
+  if(value%3 == 0) {
+    return value;
+  }
+}
 
-  //在这里写入代码
+function choose_multiples_of_three(collection) {
+  return collection.filter(isMultipleOfThree);
 }
 
 module.exports = choose_multiples_of_three;
